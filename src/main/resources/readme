@@ -1,0 +1,18 @@
+Refractoring project:
+1.Todos [added new properties]
+2.TodosRepository [add custom queries using method name prefix: findBy]
+
+    syntax : findBy + pojo class property name
+    findById(Long id) [old]
+    findByTitle(String title)
+    findByAssignedBy(String assignedBy)
+
+ 3.TodosController
+
+    adding end point for:
+    findByTitle(String title)
+    findByAssignedBy(String assignedBy)
+
+
+    @RequestParam : to read value from client application parameter.
+    @PathVariable
